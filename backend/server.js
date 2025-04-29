@@ -11,6 +11,7 @@ app.use(express.json());
 // Routes
 app.use('/api/students', require('./routes/students'));
 app.use('/api/lecturers', require('./routes/lecturers'));
+app.use('/api/modules', require('./routes/modules'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
